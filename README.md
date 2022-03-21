@@ -13,7 +13,7 @@ Whilst at Cambridge, I participated in the highly selective [Schmidt Data Scienc
 To further my experience in applying machine learning methods to real-world data, I completed a [Faculty.ai][faculty_ai_website] fellowship project with [Upside Saving][upside_saving_website], a fintech start-up on a mission to help people save money. I implemented natural language processing and deep learning techniques to translate the language of “open banking” into more structured, usable data. In addition to setting the groundwork for future data science projects at Upside, my work unlocked access to a new data insights market, valued at £1Bn globally.
 
 
-Most recently, I was accepted into the very first [AI residency program](apple_ai_residency) hosted at Apple, where I was embedded in the Siri natural language understanding team. During this time, I gained extensive experience developing and deploying machine learning software in a production environment. My research focused on utilising fine-tuned large language models for natural language generation and data augmentation.
+Most recently, I was accepted into the very first [AI residency program][apple_ai_residency] hosted at Apple, where I was embedded in the Siri natural language understanding team. During this time, I gained extensive experience developing and deploying machine learning software in a production environment. My research focused on utilising fine-tuned large language models for natural language generation and data augmentation.
 
 
 *“Artificial intelligence is revolutionising how humans and machines interact. Through my research I have been able to build technologies with the aim of benefitting us all.”*
