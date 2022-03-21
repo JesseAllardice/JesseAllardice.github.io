@@ -1,10 +1,10 @@
 ### Hi there, I'm Jesse
 
 ### I'm a Machine Learning Engineer with a background in Maths and Physics
-- I'm currently focused on NLP but am interested in multi-modal.
+- I'm currently focused on NLP but am interested in multi-modal learning.
 
 ## Bio
-I am machine learning engineer with a strong academic background in Physics and a PhD from the University of Cambridge; my research involved building analytical models of quantum phenomena for efficient solar-energy generation. As a result of the novel research, I developed patents for next-generation electronics which I helped put into production with a [commercial partner][cpt_website], resulting in a multi-million dollar company valuation.
+I am a machine learning engineer with a strong academic background in Physics and a PhD from the University of Cambridge; my research involved building analytical models of quantum phenomena for efficient solar-energy generation. As a result of the novel research, I developed patents for next-generation electronics which I helped put into production with a [commercial partner][cpt_website], resulting in a multi-million dollar company valuation.
 
 
 Whilst at Cambridge, I participated in the highly selective [Schmidt Data Science Residency][schmidt_ds_residency_website]; the programme featured hands-on training, led by industry experts, with a focus on applying the latest in cutting-edge AI tools and libraries to [scientific endeavours][accelerate_blog]. Subsequently, I provided data science training to upskill analysts at FTSE 100 companies with residency coordinators at [Cambridge Spark][cambridge_spark_website] and founded a start-up that leveraged deep learning techniques to infer [exercise-actions][action_recognition_github] purely from a webcam.
