@@ -4,6 +4,9 @@ layout: default
 
 <div class="hero-section">
   <div class="hero-content">
+    <div class="profile-photo">
+      <img src="img/profile.jpg" alt="Jesse Allardice" class="profile-image">
+    </div>
     <h1>Jesse Allardice</h1>
     <p class="hero-subtitle">Machine Learning Researcher at Apple</p>
     <p class="hero-description">
