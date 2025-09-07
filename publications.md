@@ -4,8 +4,6 @@ title: Publications
 permalink: /publications/
 ---
 
-# Publications & Research
-
 <div class="publications-grid">
   {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
   {% for publication in sorted_publications %}

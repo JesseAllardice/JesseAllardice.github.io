@@ -4,8 +4,6 @@ title: Experience
 permalink: /experience/
 ---
 
-# Professional Experience
-
 <div class="experience-grid">
   {% assign sorted_experience = site.experience | sort: 'start_date' | reverse %}
   {% for experience in sorted_experience %}

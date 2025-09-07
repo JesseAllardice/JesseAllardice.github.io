@@ -20,10 +20,6 @@
     </div>
     
     <div class="card-description">
-      {% if news_item.excerpt %}
-        {{ news_item.excerpt }}
-      {% endif %}
-      
       {% if news_item.content %}
         <div class="card-full-content">
           {{ news_item.content | markdownify }}
