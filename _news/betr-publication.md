@@ -7,7 +7,6 @@ links:
   - type: "paper"
     url: "#"
 tags: ["BETR", "language models", "efficiency"]
-excerpt: "Published novel methodology achieving 1.8–2.8× compute multipliers for language model performance."
 ---
 
 Thrilled to share our latest work on **BETR (Benchmark-Targeted Ranking)** - a novel method for matching pretraining data to benchmarks in language models.

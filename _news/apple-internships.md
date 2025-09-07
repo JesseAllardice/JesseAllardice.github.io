@@ -7,7 +7,6 @@ links:
   - type: "website"
     url: "https://machinelearning.apple.com"
 tags: ["Apple", "internships", "multimodal AI"]
-excerpt: "Apple announces exciting research internships in multimodal AI agents starting October 2025."
 ---
 
 Exciting news from Apple! We're announcing **multimodal AI agent research internships** starting October 2025.
