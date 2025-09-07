@@ -3,30 +3,32 @@ layout: default
 ---
 
 <div class="hero-section">
-  <div class="hero-content">
-    <div class="profile-photo">
+  <div class="hero-container">
+    <div class="hero-photo">
       <img src="img/profile.jpg" alt="Jesse Allardice" class="profile-image">
     </div>
-    <h1>Jesse Allardice</h1>
-    <p class="hero-subtitle">Machine Learning Researcher at Apple</p>
-    <p class="hero-description">
-      Specializing in multi-modal learning with an interest in image and video generation.
-      Background in Physics with a PhD from the University of Cambridge.
-    </p>
-    
-    <div class="social-links">
-      <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="social-link">
-        <img src="img/twitter-light.svg" alt="Twitter" class="social-icon">
-      </a>
-      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="social-link">
-        <img src="img/linkedin-light.svg" alt="LinkedIn" class="social-icon">
-      </a>
-      <a href="https://github.com/{{ site.github_username }}" target="_blank" class="social-link">
-        <img src="img/github-light.svg" alt="GitHub" class="social-icon">
-      </a>
-      <a href="https://scholar.google.co.uk/citations?user={{ site.scholar_id }}&hl=en" target="_blank" class="social-link">
-        Google Scholar
-      </a>
+    <div class="hero-text">
+      <h1>Jesse Allardice</h1>
+      <p class="hero-subtitle">Machine Learning Researcher at Apple</p>
+      <p class="hero-description">
+        Specializing in multi-modal learning with an interest in image and video generation.
+        Background in Physics with a PhD from the University of Cambridge.
+      </p>
+      
+      <div class="social-links">
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="social-link">
+          <img src="img/twitter-light.svg" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="social-link">
+          <img src="img/linkedin-light.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" class="social-link">
+          <img src="img/github-light.svg" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://scholar.google.co.uk/citations?user={{ site.scholar_id }}&hl=en" target="_blank" class="social-link">
+          Google Scholar
+        </a>
+      </div>
     </div>
   </div>
 </div>
