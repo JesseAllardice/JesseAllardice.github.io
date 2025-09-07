@@ -1,0 +1,295 @@
+---
+---
+
+@import "minima";
+
+// Color scheme inspired by ldkong.com and rowanzellers.com
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #3498db;
+  --text-color: #333;
+  --light-gray: #f8f9fa;
+  --border-color: #e1e4e8;
+  --link-color: #0366d6;
+}
+
+// Typography
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+// Hero section styling
+.hero-section {
+  background: linear-gradient(135deg, var(--light-gray) 0%, #ffffff 100%);
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+// Social links
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: opacity 0.2s ease;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+// Home content sections
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.recent-news, .featured-work {
+  margin-bottom: 3rem;
+}
+
+.recent-news h2, .featured-work h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+// News items
+.news-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+  
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+}
+
+.news-date {
+  font-weight: 600;
+  color: var(--accent-color);
+  min-width: 60px;
+  font-size: 0.9rem;
+}
+
+.news-content {
+  flex: 1;
+  line-height: 1.5;
+}
+
+// Work items
+.work-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+}
+
+.work-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.work-item p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.work-link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Page content styling
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+// Navigation styling (override minima)
+.site-header {
+  background-color: #ffffff;
+  border-top: none;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.site-nav .page-link {
+  color: var(--text-color);
+  font-weight: 500;
+  
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+// Footer styling
+.site-footer {
+  background-color: var(--light-gray);
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0;
+}
+
+// Publications page specific
+.publication-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.publication-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.publication-venue {
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+  font-style: italic;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+// Experience page specific
+.experience-item {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  background: var(--light-gray);
+}
+
+.experience-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.experience-duration {
+  font-style: italic;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .social-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .news-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .news-date {
+    min-width: auto;
+  }
+}

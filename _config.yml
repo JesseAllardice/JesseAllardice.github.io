@@ -1,0 +1,48 @@
+# Site settings
+title: Jesse Allardice
+name: Jesse Allardice
+email: ""
+description: >-
+  Machine Learning Researcher at Apple with a background in Physics.
+  Specializing in multi-modal learning, image and video generation.
+
+baseurl: ""
+url: "https://jesseallardice.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Social media
+twitter_username: jesse_allardice
+linkedin_username: jesse-allardice-phd-1374b5110
+github_username: JesseAllardice
+
+# Google Scholar
+scholar_id: k97jb6gAAAAJ
+
+# Navigation
+header_pages:
+  - about.md
+  - publications.md
+  - experience.md
+  - news.md
+
+# SEO
+lang: en
+author: Jesse Allardice
