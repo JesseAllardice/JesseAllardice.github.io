@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<article class="experience-detail">
+  <div class="experience-detail-header">
+    {% if page.company.logo %}
+    <div class="company-logo-large">
+      <img src="{{ page.company.logo | relative_url }}" alt="{{ page.company.name }}" />
+    </div>
+    {% endif %}
+    
+    <div class="experience-detail-info">
+      <h1 class="position-title">{{ page.title }}</h1>
+      <h2 class="company-name">{{ page.company.name }}</h2>
+      
+      <div class="experience-meta">
+        {% if page.employment_type %}
+          <span class="employment-type">{{ page.employment_type }}</span>
+        {% endif %}
+        <span class="duration">{{ page.start_date | date: "%B %Y" }}{% if page.end_date %} - {{ page.end_date | date: "%B %Y" }}{% else %} - Present{% endif %}</span>
+        {% if page.duration %}
+          <span class="duration-length">({{ page.duration }})</span>
+        {% endif %}
+        {% if page.location %}
+          <br><span class="location">{{ page.location }}</span>
+        {% endif %}
+      </div>
+      
+      {% if page.skills %}
+      <div class="skills-list">
+        <strong>Skills:</strong>
+        {% for skill in page.skills %}
+          <span class="skill-tag">{{ skill }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  
+  <div class="experience-detail-content">
+    {{ content }}
+  </div>
+  
+  {% if page.achievements %}
+  <div class="achievements-section">
+    <h3>Key Achievements</h3>
+    {% for achievement in page.achievements %}
+      <div class="achievement-item">
+        <h4>{{ achievement.title }}</h4>
+        {% if achievement.description %}
+          <p>{{ achievement.description }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</article>

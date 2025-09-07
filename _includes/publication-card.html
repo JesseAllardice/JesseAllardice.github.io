@@ -1,0 +1,84 @@
+<div class="publication-card" data-type="{{ publication.type | default: 'paper' }}">
+  {% if publication.image %}
+  <div class="card-image">
+    <img src="{{ publication.image | relative_url }}" alt="{{ publication.title }}" loading="lazy" />
+  </div>
+  {% endif %}
+  
+  <div class="card-content">
+    <div class="card-header">
+      <h3 class="card-title">
+        {% if publication.url %}
+          <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
+        {% else %}
+          {{ publication.title }}
+        {% endif %}
+      </h3>
+      
+      {% if publication.venue or publication.organization %}
+      <div class="card-venue">
+        {% if publication.organization %}
+          <span class="organization">{{ publication.organization }}</span>
+        {% endif %}
+        {% if publication.venue %}
+          <span class="venue">{{ publication.venue }}</span>
+        {% endif %}
+        {% if publication.year %}
+          <span class="year">{{ publication.year }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+    
+    {% if publication.authors %}
+    <div class="card-authors">
+      {% for author in publication.authors %}
+        {% if author == "Jesse Allardice" %}
+          <strong>{{ author }}</strong>
+        {% else %}
+          {{ author }}
+        {% endif %}
+        {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
+    
+    <div class="card-description">
+      {% if publication.excerpt %}
+        {{ publication.excerpt | strip_html | truncate: 200 }}
+      {% else %}
+        {{ publication.content | strip_html | truncate: 200 }}
+      {% endif %}
+    </div>
+    
+    {% if publication.links %}
+    <div class="card-links">
+      {% for link in publication.links %}
+        <a href="{{ link.url }}" target="_blank" class="card-link {{ link.type }}">
+          {% case link.type %}
+            {% when 'github' %}
+              <span class="link-icon">📁</span>
+            {% when 'paper' %}
+              <span class="link-icon">📄</span>
+            {% when 'website' %}
+              <span class="link-icon">🌐</span>
+            {% when 'demo' %}
+              <span class="link-icon">🚀</span>
+            {% else %}
+              <span class="link-icon">🔗</span>
+          {% endcase %}
+          {{ link.type | capitalize }}
+        </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+    
+    {% if publication.tags %}
+    <div class="card-tags">
+      {% for tag in publication.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

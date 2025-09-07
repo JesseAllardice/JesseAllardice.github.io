@@ -1,0 +1,68 @@
+<div class="news-card" data-type="{{ news_item.type | default: 'update' }}">
+  {% if news_item.image %}
+  <div class="card-image">
+    <img src="{{ news_item.image | relative_url }}" alt="{{ news_item.title }}" loading="lazy" />
+  </div>
+  {% endif %}
+  
+  <div class="card-content">
+    <div class="card-header">
+      <h3 class="card-title">
+        {% if news_item.url %}
+          <a href="{{ news_item.url | relative_url }}">{{ news_item.title }}</a>
+        {% else %}
+          {{ news_item.title }}
+        {% endif %}
+      </h3>
+      
+      <div class="card-meta">
+        {% if news_item.date %}
+          <span class="news-date">{{ news_item.date | date: "%B %Y" }}</span>
+        {% endif %}
+        {% if news_item.type %}
+          <span class="news-type">{{ news_item.type | capitalize }}</span>
+        {% endif %}
+      </div>
+    </div>
+    
+    <div class="card-description">
+      {% if news_item.excerpt %}
+        {{ news_item.excerpt | strip_html }}
+      {% else %}
+        {{ news_item.content | strip_html | truncate: 200 }}
+      {% endif %}
+    </div>
+    
+    {% if news_item.links %}
+    <div class="card-links">
+      {% for link in news_item.links %}
+        <a href="{{ link.url }}" target="_blank" class="card-link {{ link.type }}">
+          {% case link.type %}
+            {% when 'github' %}
+              <span class="link-icon">📁</span>
+            {% when 'paper' %}
+              <span class="link-icon">📄</span>
+            {% when 'website' %}
+              <span class="link-icon">🌐</span>
+            {% when 'conference' %}
+              <span class="link-icon">🎯</span>
+            {% when 'demo' %}
+              <span class="link-icon">🚀</span>
+            {% else %}
+              <span class="link-icon">🔗</span>
+          {% endcase %}
+          {{ link.type | capitalize }}
+        </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+    
+    {% if news_item.tags %}
+    <div class="card-tags">
+      {% for tag in news_item.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

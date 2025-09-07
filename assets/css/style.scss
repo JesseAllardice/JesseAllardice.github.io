@@ -395,6 +395,310 @@ body {
   margin-bottom: 1rem;
 }
 
+// Publications & News Grid Layouts
+.publications-grid, .news-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+// Card Base Styles
+.publication-card, .news-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+  }
+}
+
+// Card Image Styles
+.card-image {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--light-gray);
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+  
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+// Card Content Styles
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card-header {
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+// Publication-specific styles
+.card-venue, .card-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  
+  .organization, .venue, .year, .news-date, .news-type {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background: var(--light-gray);
+    color: var(--secondary-color);
+  }
+  
+  .organization {
+    background: var(--accent-color);
+    color: white;
+  }
+  
+  .venue {
+    background: #e8f4f8;
+    color: var(--accent-color);
+  }
+  
+  .news-type {
+    background: #f0f8e8;
+    color: #2d5016;
+  }
+}
+
+.card-authors {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.75rem;
+  
+  strong {
+    color: var(--primary-color);
+  }
+}
+
+.card-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+// Card Links
+.card-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  color: var(--link-color);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+  }
+  
+  .link-icon {
+    font-size: 0.8rem;
+  }
+  
+  &.github {
+    border-color: #333;
+    color: #333;
+    
+    &:hover {
+      background: #333;
+      color: white;
+    }
+  }
+  
+  &.paper {
+    border-color: #dc3545;
+    color: #dc3545;
+    
+    &:hover {
+      background: #dc3545;
+      color: white;
+    }
+  }
+  
+  &.website {
+    border-color: #28a745;
+    color: #28a745;
+    
+    &:hover {
+      background: #28a745;
+      color: white;
+    }
+  }
+}
+
+// Card Tags
+.card-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  background: var(--light-gray);
+  color: var(--secondary-color);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+// Individual Detail Pages
+.publication-detail, .news-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.publication-header, .news-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: var(--light-gray);
+  border-radius: 12px;
+}
+
+.publication-image, .news-image {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.publication-info, .news-info {
+  flex: 1;
+}
+
+.publication-title, .news-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.publication-authors, .news-date {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.publication-venue, .news-type {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.publication-tags, .news-tags {
+  margin: 1rem 0;
+}
+
+.publication-links, .news-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.publication-link, .news-link {
+  padding: 0.5rem 1rem;
+  background: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  
+  &:hover {
+    background: var(--primary-color);
+  }
+}
+
+.publication-content, .news-content {
+  line-height: 1.7;
+  
+  h2, h3, h4 {
+    color: var(--primary-color);
+    margin: 2rem 0 1rem 0;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  
+  strong {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+}
+
 // Footer styling
 .site-footer {
   background-color: var(--light-gray);
@@ -421,6 +725,357 @@ body {
 
 .contact-list li, .social-media-list li {
   margin-bottom: 0.5rem;
+}
+
+.social-media-list a {
+  color: var(--link-color);
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Experience Cards (LinkedIn Style)
+.experience-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.experience-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+}
+
+.company-logo {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .logo-placeholder {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+}
+
+.experience-content {
+  flex: 1;
+  min-width: 0; // Prevent flex item from overflowing
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+}
+
+.position-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0 0 0.25rem 0;
+  line-height: 1.3;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.company-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.employment-type {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  
+  &::before {
+    content: "·";
+    margin-right: 0.5rem;
+  }
+}
+
+.duration-location {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  line-height: 1.4;
+}
+
+.duration {
+  font-weight: 500;
+}
+
+.duration-length {
+  margin-left: 0.25rem;
+}
+
+.location {
+  color: var(--secondary-color);
+}
+
+.experience-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  
+  .read-more {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.experience-skills {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  
+  strong {
+    color: var(--text-color);
+  }
+}
+
+.skill-tag {
+  color: var(--secondary-color);
+}
+
+.experience-achievements {
+  margin-top: 0.75rem;
+  
+  .achievement {
+    margin-bottom: 0.5rem;
+    
+    strong {
+      font-size: 0.85rem;
+      color: var(--primary-color);
+    }
+    
+    p {
+      font-size: 0.8rem;
+      color: var(--secondary-color);
+      margin: 0.25rem 0 0 0;
+    }
+  }
+}
+
+// Experience Detail Pages
+.experience-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-detail-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: var(--light-gray);
+  border-radius: 12px;
+}
+
+.company-logo-large {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.experience-detail-info {
+  flex: 1;
+  
+  .position-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .company-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin: 0 0 1rem 0;
+  }
+}
+
+.experience-meta {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.5;
+  
+  .employment-type {
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .duration, .duration-length {
+    font-weight: 500;
+  }
+}
+
+.skills-list {
+  margin-top: 1rem;
+  
+  .skill-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem 0.25rem 0.25rem 0;
+    background: var(--light-gray);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border: 1px solid var(--border-color);
+  }
+}
+
+.experience-detail-content {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  
+  h2, h3, h4 {
+    color: var(--primary-color);
+    margin: 2rem 0 1rem 0;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+}
+
+.achievements-section {
+  background: var(--light-gray);
+  padding: 2rem;
+  border-radius: 12px;
+  
+  h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+  }
+}
+
+.achievement-item {
+  margin-bottom: 1.5rem;
+  
+  h4 {
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  p {
+    color: var(--text-color);
+    margin: 0;
+  }
+}
+
+// Responsive design for cards
+@media screen and (max-width: 800px) {
+  .publication-card, .news-card {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .experience-card {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .company-logo {
+    align-self: center;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .experience-content {
+    text-align: left;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    align-self: center;
+    max-width: 300px;
+  }
+  
+  .publication-header, .news-header, .experience-detail-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .publication-image, .news-image, .company-logo-large {
+    width: 100%;
+    height: 200px;
+    max-width: 300px;
+    align-self: center;
+  }
+  
+  .company-logo-large {
+    height: 100px;
+  }
+  
+  .publication-title, .news-title {
+    font-size: 1.5rem;
+  }
+  
+  .experience-detail-info .position-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-links {
+    justify-content: center;
+  }
+  
+  .footer-col-wrapper {
+    flex-direction: column;
+  }
 }
 
 .social-media-list a {

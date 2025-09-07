@@ -1,0 +1,63 @@
+<div class="experience-card">
+  <div class="company-logo">
+    {% if experience.company.logo %}
+      <img src="{{ experience.company.logo | relative_url }}" alt="{{ experience.company.name }}" loading="lazy" />
+    {% else %}
+      <div class="logo-placeholder">{{ experience.company.name | slice: 0 }}</div>
+    {% endif %}
+  </div>
+  
+  <div class="experience-content">
+    <div class="experience-header">
+      <h3 class="position-title">{{ experience.title }}</h3>
+      <div class="company-info">
+        <span class="company-name">{{ experience.company.name }}</span>
+        {% if experience.employment_type %}
+          <span class="employment-type">{{ experience.employment_type }}</span>
+        {% endif %}
+      </div>
+      <div class="duration-location">
+        <span class="duration">{{ experience.start_date | date: "%b %Y" }}{% if experience.end_date %} - {{ experience.end_date | date: "%b %Y" }}{% else %} - Present{% endif %}</span>
+        {% if experience.duration %}
+          <span class="duration-length">· {{ experience.duration }}</span>
+        {% endif %}
+        {% if experience.location %}
+          <br><span class="location">{{ experience.location }}</span>
+        {% endif %}
+      </div>
+    </div>
+    
+    <div class="experience-description">
+      {% if experience.excerpt %}
+        {{ experience.excerpt | strip_html }}
+      {% else %}
+        {{ experience.content | strip_html | truncate: 300 }}
+      {% endif %}
+      {% if experience.url %}
+        <a href="{{ experience.url | relative_url }}" class="read-more">...see more</a>
+      {% endif %}
+    </div>
+    
+    {% if experience.skills %}
+    <div class="experience-skills">
+      <strong>Skills:</strong>
+      {% for skill in experience.skills %}
+        <span class="skill-tag">{{ skill }}</span>{% unless forloop.last %} · {% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
+    
+    {% if experience.achievements %}
+    <div class="experience-achievements">
+      {% for achievement in experience.achievements %}
+        <div class="achievement">
+          <strong>{{ achievement.title }}</strong>
+          {% if achievement.description %}
+            <p>{{ achievement.description }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
