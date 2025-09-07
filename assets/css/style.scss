@@ -1,7 +1,36 @@
 ---
 ---
 
-@import "minima";
+// Base reset and normalize styles
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 
 // Color scheme inspired by ldkong.com and rowanzellers.com
 :root {
@@ -20,6 +49,63 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: var(--text-color);
+  background: #ffffff;
+}
+
+// Base layout
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Header styling
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.site-nav {
+  float: right;
+  margin-top: 0.25rem;
+}
+
+.site-nav .page-link {
+  color: var(--text-color);
+  font-weight: 500;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.nav-trigger {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+// Main content
+.page-content {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
 }
 
 // Hero section styling
@@ -172,45 +258,54 @@ body {
 }
 
 // Page content styling
-.page-content {
+.post {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem 1rem;
 }
 
-// Navigation styling (override minima)
-.site-header {
-  background-color: #ffffff;
-  border-top: none;
-  border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.site-title {
-  font-size: 1.5rem;
+.post-title {
+  font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary-color) !important;
-  text-decoration: none !important;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.post-content {
+  line-height: 1.7;
+}
+
+.post-content h1, .post-content h2, .post-content h3 {
+  color: var(--primary-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.post-content h1 { font-size: 2rem; }
+.post-content h2 { font-size: 1.5rem; }
+.post-content h3 { font-size: 1.2rem; }
+
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+.post-content a {
+  color: var(--link-color);
+  text-decoration: none;
   
   &:hover {
-    text-decoration: none !important;
+    text-decoration: underline;
   }
 }
 
-.site-nav .page-link {
-  color: var(--text-color);
-  font-weight: 500;
-  
-  &:hover {
-    color: var(--accent-color);
-  }
+.post-content ul, .post-content ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
 }
 
-// Footer styling
-.site-footer {
-  background-color: var(--light-gray);
-  border-top: 1px solid var(--border-color);
-  padding: 2rem 0;
+.post-content li {
+  margin-bottom: 0.5rem;
 }
 
 // Publications page specific
@@ -269,8 +364,94 @@ body {
   margin-bottom: 1rem;
 }
 
+// Footer styling
+.site-footer {
+  background-color: var(--light-gray);
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-list, .social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.contact-list li, .social-media-list li {
+  margin-bottom: 0.5rem;
+}
+
+.social-media-list a {
+  color: var(--link-color);
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 // Responsive design
-@media (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  .site-nav {
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: right;
+  }
+
+  .site-nav label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .site-nav .menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .site-nav .menu-icon > svg {
+    fill: var(--secondary-color);
+  }
+
+  .site-nav input ~ .trigger {
+    clear: both;
+    display: none;
+  }
+
+  .site-nav input:checked ~ .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .site-nav .page-link {
+    display: block;
+    padding: 5px 10px;
+    margin-left: 20px;
+  }
+
   .hero-section h1 {
     font-size: 2.2rem;
   }
@@ -291,5 +472,9 @@ body {
   
   .news-date {
     min-width: auto;
+  }
+  
+  .footer-col-wrapper {
+    flex-direction: column;
   }
 }
