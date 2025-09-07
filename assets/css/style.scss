@@ -516,6 +516,51 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   margin-bottom: 1rem;
+  
+  .card-full-content {
+    margin-top: 1rem;
+    
+    h2, h3, h4 {
+      color: var(--primary-color);
+      margin: 1.5rem 0 0.75rem 0;
+      font-weight: 600;
+    }
+    
+    h2 { font-size: 1.1rem; }
+    h3 { font-size: 1rem; }
+    h4 { font-size: 0.95rem; }
+    
+    p {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+    
+    ul, ol {
+      margin: 0.75rem 0;
+      padding-left: 1.5rem;
+    }
+    
+    li {
+      margin-bottom: 0.25rem;
+    }
+    
+    strong {
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+    
+    em {
+      font-style: italic;
+    }
+    
+    blockquote {
+      border-left: 3px solid var(--accent-color);
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      background: var(--light-gray);
+      font-style: italic;
+    }
+  }
 }
 
 // Card Links

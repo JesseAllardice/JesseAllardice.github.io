@@ -7,13 +7,7 @@
   
   <div class="card-content">
     <div class="card-header">
-      <h3 class="card-title">
-        {% if news_item.url %}
-          <a href="{{ news_item.url | relative_url }}">{{ news_item.title }}</a>
-        {% else %}
-          {{ news_item.title }}
-        {% endif %}
-      </h3>
+      <h3 class="card-title">{{ news_item.title }}</h3>
       
       <div class="card-meta">
         {% if news_item.date %}
@@ -27,9 +21,13 @@
     
     <div class="card-description">
       {% if news_item.excerpt %}
-        {{ news_item.excerpt | strip_html }}
-      {% else %}
-        {{ news_item.content | strip_html | truncate: 200 }}
+        {{ news_item.excerpt }}
+      {% endif %}
+      
+      {% if news_item.content %}
+        <div class="card-full-content">
+          {{ news_item.content | markdownify }}
+        </div>
       {% endif %}
     </div>
     

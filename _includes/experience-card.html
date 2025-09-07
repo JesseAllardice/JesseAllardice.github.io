@@ -29,12 +29,13 @@
     
     <div class="experience-description">
       {% if experience.excerpt %}
-        {{ experience.excerpt | strip_html }}
-      {% else %}
-        {{ experience.content | strip_html | truncate: 300 }}
+        {{ experience.excerpt }}
       {% endif %}
-      {% if experience.url %}
-        <a href="{{ experience.url | relative_url }}" class="read-more">...see more</a>
+      
+      {% if experience.content %}
+        <div class="card-full-content">
+          {{ experience.content | markdownify }}
+        </div>
       {% endif %}
     </div>
     

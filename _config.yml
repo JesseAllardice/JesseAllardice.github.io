@@ -19,14 +19,11 @@ plugins:
 # Collections
 collections:
   publications:
-    output: true
-    permalink: /:collection/:name/
+    output: false
   news:
-    output: true
-    permalink: /:collection/:name/
+    output: false
   experience:
-    output: true
-    permalink: /:collection/:name/
+    output: false
 
 # Collection defaults
 defaults:
