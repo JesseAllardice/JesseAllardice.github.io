@@ -63,7 +63,7 @@ bundle exec jekyll serve
 
 ## 🎨 Design Features
 
-The site features a clean, academic design inspired by [ldkong.com](https://ldkong.com) and [rowanzellers.com](https://rowanzellers.com):
+The site features a clean, academic design:
 
 - **Responsive design** that works on all devices
 - **Professional typography** with excellent readability

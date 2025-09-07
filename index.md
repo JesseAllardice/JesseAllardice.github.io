@@ -16,11 +16,11 @@ layout: default
       </p>
       
       <div class="social-links">
-        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="social-link">
-          <img src="img/twitter-light.svg" alt="Twitter" class="social-icon">
-        </a>
         <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="social-link">
           <img src="img/linkedin-light.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://x.com/{{ site.twitter_username }}" target="_blank" class="social-link">
+          <img src="img/twitter-light.svg" alt="Twitter" class="social-icon">
         </a>
         <a href="https://github.com/{{ site.github_username }}" target="_blank" class="social-link">
           <img src="img/github-light.svg" alt="GitHub" class="social-icon">
