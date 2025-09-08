@@ -1,5 +1,5 @@
 ---
-title: "Research Internship opportunity at Apple "
+title: "Research Internship opportunity at Apple"
 date: 2025-09-03
 type: "opportunity"
 image: "/img/news/apple-internships.png"
@@ -9,7 +9,7 @@ links:
 tags: ["Apple", "Internships", "Multimodal Agents"]
 ---
 
-📍Location: Santa Clara Valley (US 🇺🇸 ) & Zurich (Switzerland🇨🇭)
+📍Location: Santa Clara Valley (US) & Zurich (Switzerland)
 
 🗓️ Start date: October 2025 onwards
 
