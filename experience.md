@@ -26,6 +26,10 @@ permalink: /experience/
   {% endfor %}
 </div>
 
+## Selected Awards
+
+I received 1st place in the Winton Berkeley-Cambridge exchange's Research Proposal Competition. During my PhD, I was supported by scholarships from the Cambridge Trust, St. John's College, and the Winton Program for the Physics of Sustainability. As an undergraduate, I received the Victoria University Excellence Scholarship and was recognized as the Top Physics Student.
+
 ## Volunteering
 
 <div class="experience-grid">
