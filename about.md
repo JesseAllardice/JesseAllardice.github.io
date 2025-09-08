@@ -4,26 +4,28 @@ title: About
 permalink: /about/
 ---
 
-# About Jesse Allardice
+## About Me
 
-I am a machine learning researcher with a strong academic background in Physics and a PhD from the University of Cambridge. My research involved building analytical models of quantum phenomena for efficient solar-energy generation. As a result of the novel research, I developed patents for next-generation electronics which I helped put into production with a [commercial partner](https://www.cambridgephoton.com/), resulting in a multi-million dollar company valuation.
+I'm an AI researcher at Apple specializing in multimodal foundation models, image and video generation, and large language model pretraining. My work focuses on pushing the boundaries of how AI systems learn from and generate visual content, drawing on rigorous scientific methodologies and mathematical skills developed through my physics background.
 
-## Current Research
+## Research Focus
 
-I am currently a machine learning researcher at Apple, working on multimodal foundation models, image and video generation, and pretraining science for large language models. My research focuses on advancing the state of the art in AI systems, with particular emphasis on how models learn from and generate visual content.
+My current research centers on advancing multimodal AI systems at Apple, where I work on fundamental questions in multimodal foundation models. I'm particularly interested in modeling visual modalities such as video and using empirical models to inform pretraining design decisions.
 
-Previously, I was part of Apple's inaugural [AI residency program](https://machinelearning.apple.com/updates/aiml-residency-program-application), where I was embedded in the Siri natural language understanding team. During this time, I gained extensive experience developing and deploying machine learning software in production environments, focusing on fine-tuned large language models for natural language generation and data augmentation.
+Previously, as part of Apple's inaugural [AI residency program](https://machinelearning.apple.com/updates/aiml-residency-program-application), I was embedded with the Siri natural language understanding team, where I developed and deployed fine-tuned language models for natural language generation and synthetic data generation in production environments.
 
-## Academic Background
+## Scientific Approach
 
-Whilst at Cambridge, I participated in the highly selective [Schmidt Data Science Residency](https://www.cst.cam.ac.uk/news/schmidt-data-science-course-scores-hit); the programme featured hands-on training, led by industry experts, with a focus on applying the latest in cutting-edge AI tools and libraries to [scientific endeavours](https://acceleratescience.github.io//2021/07/08/JesseAllardice-ML-for-solar-tech). Subsequently, I provided data science training to upskill analysts at FTSE 100 companies with residency coordinators at [Cambridge Spark](https://www.cambridgespark.com/) and founded a start-up that leveraged deep learning techniques to infer [exercise-actions](https://github.com/JesseAllardice/Action-Recognition) purely from a webcam.
+My research methodology is deeply influenced by my training in mathematical physics. I bring the same analytical rigor I used to model quantum phenomena: building first-principles theoretical frameworks, designing controlled experiments, and deriving insights from mathematical analysis to understanding AI systems. This physics-trained intuition for complex systems, probabilistic reasoning, and emergent behavior has proven invaluable in tackling fundamental questions in machine learning.
 
-## Industry Experience
+During my PhD at Cambridge, I developed analytical models for quantum systems that led to patented next-generation electronics, which I helped commercialize with [Cambridge Photon Technology](https://www.cambridgephoton.com/), resulting in a multi-million dollar company valuation. This experience taught me how to bridge theoretical research with practical impact, an approach I now apply to AI research.
 
-To further my experience in applying machine learning methods to real-world data, I completed a [Faculty.ai](https://faculty.ai/) fellowship project with [Upside Saving](https://www.upsidesaving.com/), a fintech start-up on a mission to help people save money. I implemented natural language processing and deep learning techniques to translate the language of "open banking" into more structured, usable data. In addition to setting the groundwork for future data science projects at Upside, my work unlocked access to a new data insights market, valued at £1Bn globally.
+## Technical Experience
+
+My AI research spans **multimodal foundation models, computer vision, NLP, and robotics/autonomy systems**. I've applied these across domains: implementing NLP for fintech at [Upside Saving](https://www.upsidesaving.com/), developing computer vision for [exercise recognition](https://github.com/JesseAllardice/Action-Recognition), and working on autonomous systems.
+
+My PhD work at Cambridge on quantum phenomena in solar energy systems led to patents and commercialization with [ambridge Photon Technology](https://www.cambridgephoton.com/), creating multi-million dollar value. I participated in the [Schmidt Data Science Residency](https://www.cst.cam.ac.uk/news/schmidt-data-science-course-scores-hit) and trained analysts at FTSE 100 companies with [Cambridge Spark](https://www.cambridgespark.com/).
 
 ## Research Philosophy
 
-*"Artificial intelligence is revolutionising how humans and machines interact. Through my research I have been able to build technologies with the aim of benefitting us all."*
-
-My work spans from fundamental research in quantum physics to applied machine learning in industry, always with a focus on creating technology that has real-world impact and benefits society.
+Impactful AI research requires understanding systems at a fundamental level. My physics training provides intuition for complex systems and emergent behavior, enabling me to design experiments and mathematical frameworks that capture essential AI dynamics. I aim to contribute foundational insights that advance theoretical understanding while creating technology that benefits society.
