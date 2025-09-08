@@ -10,13 +10,13 @@ I'm an AI researcher at Apple specializing in multimodal foundation models, imag
 
 ## Research Focus
 
-My current research centers on advancing multimodal AI systems at Apple, where I work on fundamental questions in multimodal foundation models. I'm particularly interested in modeling visual modalities such as video and using empirical models to inform pretraining design decisions.
+My current research centers on advancing multimodal AI systems at Apple, where I work on fundamental questions in multimodal foundation models. I'm particularly interested in pretraining foundation models on visual modalities such as video and using empirical models to inform pretraining design decisions.
 
 Previously, as part of Apple's inaugural [AI residency program](https://machinelearning.apple.com/updates/aiml-residency-program-application), I was embedded with the Siri natural language understanding team, where I developed and deployed fine-tuned language models for natural language generation and synthetic data generation in production environments.
 
 ## Scientific Approach
 
-My research methodology is deeply influenced by my training in mathematical physics. I bring the same analytical rigor I used to model quantum phenomena: building first-principles theoretical frameworks, designing controlled experiments, and deriving insights from mathematical analysis to understanding AI systems. This physics-trained intuition for complex systems, probabilistic reasoning, and emergent behavior has proven invaluable in tackling fundamental questions in machine learning.
+My research methodology is deeply influenced by my training in mathematical physics. I bring the same analytical rigor I used to model quantum phenomena to understanding AI systems: building first-principles theoretical frameworks, designing controlled experiments, and deriving insights from mathematical analysis. This physics-trained intuition for complex systems, probabilistic reasoning, and emergent behavior has proven invaluable in tackling fundamental questions in machine learning.
 
 During my PhD at Cambridge, I developed analytical models for quantum systems that led to patented next-generation electronics, which I helped commercialize with [Cambridge Photon Technology](https://www.cambridgephoton.com/), resulting in a multi-million dollar company valuation. This experience taught me how to bridge theoretical research with practical impact, an approach I now apply to AI research.
 

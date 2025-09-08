@@ -12,6 +12,6 @@ skills: ["Multimodal Learning", "Large Language Models", "Computer Vision", "Nat
 excerpt: "Researching Multimodal Large Language Models (MLLMs) models to solve novel tasks in image/video understanding and generation."
 ---
 
-Researching Multimodal Large Language Models (MLLMs) models to solve novel tasks in image/video understanding and generation.
+Researching Multimodal Large Language Models (MLLMs) to solve novel tasks in image/video understanding and generation.
 
 Improved the capabilities and performance of large-scale machine-learned computer vision for robotics applications in Apple-SPG.

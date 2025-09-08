@@ -14,4 +14,4 @@ excerpt: "Entrepreneur First is an international Talent Investor, which supports
 
 Entrepreneur First is an international Talent Investor, which supports individuals to build technology companies. It has offices in seven locations: Toronto, London, Berlin, Paris, Singapore, Hong Kong and Bangalore.
 
-EF have built over 200 companies, have over 2000 alumni worldwide, and our portfolio has a valuation of over $2 billion. EF's major exits to date include Magic Pony, led by Rob Bishop and Zehan Wang, which was acquired by Twitter for a reported $150 million only 18 months after the founders met on the EF programme.
+EF have built over 200 companies, have over 2000 alumni worldwide, and their portfolio has a valuation of over $2 billion. EF's major exits to date include Magic Pony, led by Rob Bishop and Zehan Wang, which was acquired by Twitter for a reported $150 million only 18 months after the founders met on the EF programme.

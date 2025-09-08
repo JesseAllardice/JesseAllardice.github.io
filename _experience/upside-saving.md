@@ -14,4 +14,4 @@ excerpt: "Developed natural language processing and Transformer based models to 
 
 Developed natural language processing and Transformer based models to translate the language of "open banking" into more structured, usable data.
 
-Set the groundwork for future data science projects at Upside, my work unlocked access to a new data insights market, valued at £1Bn globally.
+Set the groundwork for future data science projects at Upside, unlocking access to a new data insights market, valued at £1Bn globally.
