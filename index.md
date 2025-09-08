@@ -9,7 +9,7 @@ layout: default
     </div>
     <div class="hero-text">
       <p class="hero-description">
-        I'm a machine learning researcher at <a href="https://machinelearning.apple.com/" target="_blank">Apple</a>, formerly <a href="https://www.cam.ac.uk/" target="_blank">Cambridge</a> Physics PhD. I work on multimodal foundation models across vision, language, and generation.
+        I'm a machine learning researcher at <a href="https://machinelearning.apple.com/" target="_blank">Apple</a>, formerly <a href="https://www.cam.ac.uk/" target="_blank">Cambridge</a> Physics PhD. I work on multimodal foundation models, image and video generation, and pretraining science for large language models.
       </p>
       
       <div class="social-links">
