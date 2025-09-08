@@ -8,11 +8,8 @@ layout: default
       <img src="img/profile.jpg" alt="Jesse Allardice" class="profile-image">
     </div>
     <div class="hero-text">
-      <h1>Jesse Allardice</h1>
-      <p class="hero-subtitle">Machine Learning Researcher at Apple</p>
       <p class="hero-description">
-        Specializing in multi-modal learning with an interest in image and video generation.
-        Background in Physics with a PhD from the University of Cambridge.
+        I'm a machine learning researcher at <a href="https://machinelearning.apple.com/" target="_blank">Apple</a>, formerly <a href="https://www.cam.ac.uk/" target="_blank">Cambridge</a> Physics PhD. I work on multimodal foundation models across vision, language, and generation.
       </p>
       
       <div class="social-links">
@@ -34,33 +31,29 @@ layout: default
 </div>
 
 <div class="home-content">
-  <section class="recent-news">
-    <h2>Recent News</h2>
-    <div class="news-item">
-      <span class="news-date">2025</span>
-      <span class="news-content">Presenting "FlexTok: Resampling Images into 1D Token Sequences of Flexible Length" at ICML 2025 (July 15, Poster Session 2 East)</span>
+  <section class="featured-work">
+    <h2>Featured Research</h2>
+    <div class="publications-grid">
+      {% assign recent_publications = site.publications | sort: 'year' | reverse %}
+      {% for publication in recent_publications limit: 3 %}
+        {% include publication-card.html publication=publication %}
+      {% endfor %}
     </div>
-    <div class="news-item">
-      <span class="news-date">2025</span>
-      <span class="news-content">Published work on BETR (benchmark-targeted ranking) achieving 1.8–2.8× compute multipliers for language model performance</span>
-    </div>
-    <div class="news-item">
-      <span class="news-date">2025</span>
-      <span class="news-content">Apple announces multimodal AI agent research internships in Santa Clara Valley and Zurich</span>
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <a href="/publications/" class="work-link">View All Publications →</a>
     </div>
   </section>
 
-  <section class="featured-work">
-    <h2>Featured Research</h2>
-    <div class="work-item">
-      <h3>FlexTok: Resampling Images into 1D Token Sequences</h3>
-      <p>Latest research on flexible-length image tokenization for multimodal learning, presented at ICML 2025.</p>
-      <a href="https://github.com/apple/ml-flextok" target="_blank" class="work-link">View on GitHub</a>
+  <section class="recent-news">
+    <h2>Recent News</h2>
+    <div class="news-grid">
+      {% assign recent_news = site.news | sort: 'date' | reverse %}
+      {% for news_item in recent_news limit: 3 %}
+        {% include news-card.html news_item=news_item %}
+      {% endfor %}
     </div>
-    
-    <div class="work-item">
-      <h3>BETR: Benchmark-Targeted Ranking</h3>
-      <p>Novel method for matching pretraining data to benchmarks in language models, achieving significant compute efficiency improvements.</p>
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <a href="/news/" class="work-link">View All News →</a>
     </div>
   </section>
 </div>

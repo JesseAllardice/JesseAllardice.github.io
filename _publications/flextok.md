@@ -1,28 +1,24 @@
 ---
 title: "FlexTok: Resampling Images into 1D Token Sequences of Flexible Length"
-authors: ["Jesse Allardice", "et al."]
+authors: ["Roman Bachmann", "**Jesse Allardice**", "David Mizrahi", "Enrico Fini", "Oğuzhan Fatih Kar", "Elmira Amirloo", "Alaaeldin El-Nouby", "Amir Zamir", "Afshin Dehghan"]
 venue: "ICML 2025"
 year: 2025
-type: "conference"
-organization: "Apple"
-image: "/img/publications/flextok.jpg"
+paper_url: "https://proceedings.mlr.press/v235/bachmann25a.html"
+preprint_url: "https://arxiv.org/abs/2407.12786"
+image: "/img/publications/flextok.png"
+tags: ["Computer Vision", "Tokenization", "Machine Learning"]
+citations: 19
 links:
+  - type: "paper"
+    url: "https://icml.cc/virtual/2025/poster/45993"
+  - type: "website"
+    url: "https://flextok.epfl.ch/"
+  - type: "pre-print"
+    url: "https://arxiv.org/abs/2502.13967"
   - type: "github"
     url: "https://github.com/apple/ml-flextok"
-  - type: "paper"
-    url: "#"
-tags: ["multimodal", "tokenization", "computer vision"]
-excerpt: "A novel approach to image tokenization that enables flexible-length sequences for improved multimodal learning."
+  - type: "demo"
+    url: "https://huggingface.co/spaces/EPFL-VILAB/FlexTok"
 ---
 
-A novel approach to image tokenization that enables flexible-length sequences for improved multimodal learning. This work addresses long-standing constraints in multimodal learning by introducing flexible-length image token sequences.
-
-**Key Contributions:**
-- Flexible-length image tokenization methodology
-- Improved multimodal learning performance
-- Novel resampling techniques for visual data
-
-**Presentation Details:**
-- Venue: Poster Session 2 East (E-Poster 3010)
-- Date: Tuesday, July 15 at 4:30pm
-- Conference: International Conference on Machine Learning 2025
+FlexTok introduces a novel approach for resampling images into 1D token sequences of flexible length, enabling more efficient processing of visual data in transformer architectures.

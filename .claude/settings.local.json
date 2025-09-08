@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:scholar.google.co.uk)",
+      "WebFetch(domain:arxiv.org)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -406,13 +406,13 @@ body {
 .publication-card, .news-card {
   display: flex;
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 0.5rem 2rem 2rem 2rem; /* Reduce top padding even more to 0.5rem */
   background: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: all 0.2s ease;
-  align-items: flex-start;
+  align-items: baseline; /* Change to baseline alignment */
   
   &:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
@@ -425,15 +425,17 @@ body {
   flex-shrink: 0;
   width: 160px;
   height: 160px;
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
   background: var(--light-gray);
+  margin-top: 24px; /* Push image down even more */
   
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.2s ease;
+    display: block;
   }
   
   &:hover img {
@@ -446,20 +448,24 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.25rem;
   justify-content: flex-start;
+  align-self: flex-start;
+  margin-top: 0; /* Reset margin */
 }
 
 .card-header {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.15rem;
+  margin-top: 0;
 }
 
 .card-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--primary-color);
-  margin: 0 0 0.5rem 0;
-  line-height: 1.3;
+  margin: 0 0 0.25rem 0;
+  line-height: 1;  /* Set to 1 to eliminate space above text */
+  padding-top: 0;
   
   a {
     color: var(--primary-color);
@@ -476,7 +482,7 @@ body {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   
   .organization, .venue, .year, .news-date, .news-type {
     font-size: 0.9rem;
@@ -510,6 +516,7 @@ body {
   
   strong {
     color: var(--primary-color);
+    font-weight: bold;
   }
 }
 
@@ -517,10 +524,10 @@ body {
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--text-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   
   .card-full-content {
-    margin-top: 1rem;
+    margin-top: 0.1rem;
     
     h2, h3, h4 {
       color: var(--primary-color);
@@ -768,15 +775,25 @@ body {
 .contact-list, .social-media-list {
   list-style: none;
   margin-left: 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .contact-list li, .social-media-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 .social-media-list a {
   color: var(--link-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  svg {
+    flex-shrink: 0;
+  }
   
   &:hover {
     text-decoration: underline;
@@ -793,7 +810,7 @@ body {
 .experience-card {
   display: flex;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem; /* Reduce top padding to match news cards */
   background: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -815,6 +832,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px; /* Push company logo down to align with title */
   
   img {
     width: 100%;
@@ -1128,6 +1146,13 @@ body {
 .social-media-list a {
   color: var(--link-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  svg {
+    flex-shrink: 0;
+  }
   
   &:hover {
     text-decoration: underline;

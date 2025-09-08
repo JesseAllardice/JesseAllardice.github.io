@@ -11,13 +11,6 @@ permalink: /publications/
   {% endfor %}
 </div>
 
-## Academic Recognition
-
-- **Schmidt Data Science Residency** - University of Cambridge
-- **Apple AI Residency Program** - First cohort participant  
-- **Faculty.ai Fellowship** - Applied ML in fintech
-- **PhD in Physics** - University of Cambridge
-
 ---
 
 For the most up-to-date list of publications, please visit my [Google Scholar profile](https://scholar.google.co.uk/citations?user={{ site.scholar_id }}&hl=en).

@@ -1,22 +1,15 @@
 ---
-title: "BETR: Breakthrough in Language Model Efficiency"
-date: 2025-02-01
+title: "BETR: Language Models Improve When Pretraining Data Matches Target Tasks"
+date: 2025-07-16
 type: "publication"
-image: "/img/news/betr-publication.jpg"
+# image: "img/news/betr-publication.png"
+image: "img/news/betr-scaling-laws.png"
 links:
   - type: "paper"
-    url: "#"
+    url: "https://arxiv.org/abs/2507.12466"
 tags: ["BETR", "language models", "efficiency"]
 ---
 
-Thrilled to share our latest work on **BETR (Benchmark-Targeted Ranking)** - a novel method for matching pretraining data to benchmarks in language models.
+Forget vague heuristics—match your pretraining data directly to your benchmarks! Our latest work, **BETR (Benchmark-Targeted Ranking)**, does exactly that and delivers **1.8–2.8× compute multipliers** over standard baselines. Instead of relying on indirect heuristics like "Wikipedia is good data," BETR directly aligns pretraining data with benchmarks by ranking documents based on similarity to benchmark training examples.
 
-**Key Results:**
-- Achieved **1.8–2.8× compute multipliers** over strong baselines
-- Demonstrated significant efficiency improvements in compute utilization
-- Breakthrough in language model training efficiency
-
-**Impact:**
-The BETR methodology demonstrates how strategic data selection can dramatically improve language model performance while reducing computational requirements. This research has important implications for making large language models more accessible and environmentally sustainable.
-
-This work represents a significant advancement in making AI more efficient and sustainable for the broader research community.
+The results are striking: we need only ~45–55% of the compute to reach the same performance. Our scaling laws reveal that when you scale up model size and compute, milder filtering becomes optimal. But there's a catch—over-optimizing for standard benchmarks can create narrow, brittle models, reminding us that the benchmarks we choose fundamentally shape what our models can become.

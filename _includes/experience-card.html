@@ -28,10 +28,6 @@
     </div>
     
     <div class="experience-description">
-      {% if experience.excerpt %}
-        {{ experience.excerpt }}
-      {% endif %}
-      
       {% if experience.content %}
         <div class="card-full-content">
           {{ experience.content | markdownify }}

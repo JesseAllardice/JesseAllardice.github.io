@@ -4,31 +4,35 @@ title: Experience
 permalink: /experience/
 ---
 
+## Professional Experience
+
 <div class="experience-grid">
   {% assign sorted_experience = site.experience | sort: 'start_date' | reverse %}
   {% for experience in sorted_experience %}
-    {% include experience-card.html experience=experience %}
+    {% unless experience.employment_type == 'Fellowship' or experience.employment_type == 'Residency' or experience.employment_type == 'Education' or experience.employment_type == 'Volunteering' %}
+      {% include experience-card.html experience=experience %}
+    {% endunless %}
   {% endfor %}
 </div>
 
-## Skills & Expertise
+## Education & Training
 
-**Research Areas:**
-- Multi-modal machine learning
-- Computer vision and image/video generation
-- Natural language processing
-- Quantum physics applications
-- Solar energy technology
+<div class="experience-grid">
+  {% assign sorted_experience = site.experience | sort: 'start_date' | reverse %}
+  {% for experience in sorted_experience %}
+    {% if experience.employment_type == 'Fellowship' or experience.employment_type == 'Residency' or experience.employment_type == 'Education' %}
+      {% include experience-card.html experience=experience %}
+    {% endif %}
+  {% endfor %}
+</div>
 
-**Technical Skills:**
-- Large language models and fine-tuning
-- Deep learning frameworks (PyTorch, TensorFlow)
-- Production ML systems
-- Data augmentation techniques
-- Statistical modeling and analysis
+## Volunteering
 
-**Leadership & Communication:**
-- Corporate training and education
-- Cross-functional team collaboration
-- Research publication and presentation
-- Patent development and commercialization
+<div class="experience-grid">
+  {% assign sorted_experience = site.experience | sort: 'start_date' | reverse %}
+  {% for experience in sorted_experience %}
+    {% if experience.employment_type == 'Volunteering' %}
+      {% include experience-card.html experience=experience %}
+    {% endif %}
+  {% endfor %}
+</div>
